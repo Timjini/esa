@@ -1,23 +1,22 @@
 import React from 'react';
-import './App.css';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {Routes,Route} from 'react-router-dom';
+import Etudierenfrance from './components/pages/Etudierenfrance';
 import Acceuil from './components/pages/Acceuil';
-
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-      <Navbar />
+    <>
+    <Navigation />
+
       <Routes>
-        <Route path="/" extract component={Acceuil} />
+      <Route path='/' element={<Acceuil />} />
+      <Route path='etudier-en-france' element={<Etudierenfrance />} />
       </Routes>
-    
-    </div>
-    </Router>
+      <Footer />
+    </>
   );
 }
 

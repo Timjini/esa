@@ -1,6 +1,6 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    height: 80px;
+    background: white;;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +61,7 @@
   .nav-links:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
+    text-decoration: none;
   }
   
   .fa-bars {
@@ -74,6 +75,11 @@
   .menu-icon {
     display: none;
   }
+  .esa-logo {
+    width: rem;
+    height: 5rem;
+  }
+  
   
   @media screen and (max-width: 960px) {
     .NavbarItems {
